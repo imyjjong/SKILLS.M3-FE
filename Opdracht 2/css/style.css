@@ -30,6 +30,57 @@ body{
     flex-shrink: 0;
 }
 
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.card--slider > h2{
+    font-size: 400%;
+    color: black;
+}
+
+.card--slider > input{
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: linear-gradient(to top, #6441a5, #2a0845);
+}
+
+.card--slider > input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    cursor:pointer;
+}
+
+.card--watch{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card--watch img{
+    height: 70%;
+    width: 100%;
+}
+
+.card--watch p{
+    height: 20%;
+    font-size: 75%;
+    color: black;
+}
+
 .card--stopwatch{
     display: flex;
     justify-content: center;

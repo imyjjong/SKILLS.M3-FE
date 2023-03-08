@@ -7,9 +7,15 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <article class="card"></article>
-    <article class="card"></article>
+<body id="js--body">
+    <article class="card card--slider">
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="4" step="1">
+    </article>
+    <article class="card card--watch">
+        <img id="js--image" src="" alt="">
+        <p id="js--text"></p>
+    </article>
     <article class="card card--stopwatch">
         <div>
             <span class="timerText" id="js--minutesTimer">0</span>

@@ -39,3 +39,25 @@ resetButton.onclick = function(){
     secondsTimer.innerText = seconds;
     minutesTimer.innerText = minutes;
 }
+
+const rangeValue = document.getElementById("js--rangeValue");
+const slider = document.getElementById("js--slider");
+const body = document.getElementById("js--body");
+slider.value = 2;
+rangeValue.innerText = slider.value + "x";
+
+slider.oninput = function(){
+    rangeValue.innerText = slider.value + "x";
+    body.style.fontSize = slider.value + "rem";
+}
+
+const text = document.getElementById("js--text");
+const image = document.getElementById("js--image");
+
+let data = {
+    "text": "Ja ik wist niet zo goed wat ik moest doen dus hier een foto van iets van The Matrix",
+    "img": "/img/matrix.webp"
+};
+
+text.innerText = data.text;
+image.setAttribute("src", data.img);
