@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: lightblue;
+    padding: 4rem;
+}
+
+.cards{
+    height: 85vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 2rem;
+}
+
+.card{
+    list-style: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.2);
+}
+
+.card--first{
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card--first > input{
+    width: 50%;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem;
+}
+
+.card--second{
+    grid-column: 5 / 13;
+    grid-row: 1 / 13;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 1.5rem;
+}
+
+.card--second > img{
+    width: 15%;
+}
+
+.card--second > input{
+    width: 50%;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem;
+}
+
+.card--third{
+    grid-row: 7 / 13;
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--third > img{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.card--third > button{
+    border: none;
+    background: transparent;
+}
+
+.card--third > button > img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.card--third > button > img:hover{
+    transform: scale(1.1);
+}
+
+.card--fourth{
+    grid-row: 12 / 13;
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background: #9E0000;
+    color: white;
+    border-radius: 50rem;
+}
+
+.card--fourth > p{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 87.5rem){
+    .card--second{
+        grid-row: 1 / 13;
+    }
+    .card--third{
+        grid-column: 1 / 5;
+    }
+}
+
+.card--fourth:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 62.5rem){
+    .card--first, .card--second{
+        display: none;
+    }
+    .card--third{
+        grid-column: 1 / 13;
+        grid-row: 1 / 13;
+    }
+}

@@ -54,10 +54,12 @@ slider.oninput = function(){
 const text = document.getElementById("js--text");
 const image = document.getElementById("js--image");
 
-let data = {
-    "text": "Ja ik wist niet zo goed wat ik moest doen dus hier een foto van iets van The Matrix",
-    "img": "/img/matrix.webp"
-};
-
-text.innerText = data.text;
-image.setAttribute("src", data.img);
+const paragraph = document.getElementById("js--text");
+let data = fetch("js/data.json").then(
+    function(binnenGekomenData){
+        return binnenGekomenData.json();
+    }).then(
+        function(echteData){
+            paragraph.innerHTML = echteData.text;
+        }
+    );
