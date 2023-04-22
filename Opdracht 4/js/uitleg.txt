@@ -1,0 +1,21 @@
+labels staat gewoon voor wat er onderaan staat
+het is een array en in de array staan de maanden die je wilt aangeven in de grafiek
+
+datasets staat voor de grafiek, dus de lijn of lijnen in de grafiek
+volgens mij heet die lijn de grafiek but doesnt matter
+
+label staat gewoon voor de titel van de grafiek dus wat daar staat is wat er boven de grafiek staat als titel
+
+background color is kinda obvious, its the color of the grafiek
+border color is obviously the color of the border
+data is de variabelen van de grafiek. dus op welke plaatsen de grafiek loopt
+dus bij elke label voer je een variabele en daar staat dan een punt van de grafiek
+
+
+config:
+type is gewoon de type grafiek, dus bijvoorbeeld een lijn
+data is de data variabale
+options ja dat weet ik niet maar ik kom er wel achter
+
+myChart maakt een nieuwe grafiek met config
+en config verwijst naar data en data verwijst naar labels

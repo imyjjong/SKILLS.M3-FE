@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -26,8 +27,15 @@
             <img class="image" id="js--pokemon--image" src="" alt="">
             <button id="js--catch-button"><img src="img/pokeball.webp" alt=""></button>
         </li>
-        <li id="js--refresh" class="card card--fourth">
-            <p>↻</p>
+        <li class="card card--fourth">
+            <canvas id="js--chart--1"></canvas>
+        </li>
+        <li class="card card--fifth">
+            <canvas id="js--chart--2"></canvas>
+        </li>
+        <li class="card card--sixth">
+            <h2 id="js--current-time"></h2>
+            <h2 id="js--current-date"></h2>
         </li>
     </ul>
 </body>
